@@ -1,0 +1,38 @@
+var bodyX = 77;
+var bodyY = 311;
+var bodyW = 116;
+var faceW = bodyW/2;
+noStroke();
+
+draw = function() {
+    background(207, 254, 255);
+    fill(9, 255, 0);
+rect(-3, 350, 412, 71);
+    bodyX+=0.1;
+    fill(105, 93, 31);
+    ellipse(bodyX, bodyY, bodyW, 106); // body?
+    
+    ellipse(bodyX-20, bodyY-90, bodyW-90, 30);//left ear
+    ellipse(bodyX+20, bodyY-90, bodyW-90, 30);//right ear
+     fill(196, 199, 34);
+     ellipse(bodyX+20, bodyY-90, bodyW-105, 10);//right ear inner
+     ellipse(bodyX-20, bodyY-90, bodyW-105, 10);//left ear inner
+     
+     fill(105, 93, 31);
+    ellipse(bodyX, bodyY-70, faceW, 47); // face
+    
+    ellipse(bodyX-55, bodyY-35, bodyW-80, 20);// left arm
+    ellipse(bodyX+55, bodyY-35, bodyW-80, 20);//right arm 
+    ellipse(bodyX+35, bodyY+55, bodyW-80, 20);//right foot
+    ellipse(bodyX-35, bodyY+55, bodyW-80, 20);//left foot
+    
+    fill(196, 199, 34);
+     ellipse(bodyX, bodyY, bodyW-190, 78);//body inner
+  
+    fill(0, 0, 0);
+     ellipse(bodyX-10, bodyY-75, bodyW-110, 11);//left eye
+     ellipse(bodyX+10, bodyY-75, bodyW-110, 11);//right eye
+     
+     ellipse(bodyX, bodyY-65, bodyW-100, 10);//mouth
+     
+};
